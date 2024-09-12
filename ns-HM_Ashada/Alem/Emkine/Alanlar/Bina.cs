@@ -1,9 +1,14 @@
-﻿using ns_HM_Ashada.Alem.Emkine.Rufuf;
-
-namespace ns_HM_Ashada.Alem.Emkine.Alanlar
+﻿namespace ns_HM_Ashada.Alem.Emkine.Alanlar
 {
     public class Bina
     {
-        public Raf Rufuf;
+        public List<Kitaplik> Kitaplik;
+
+        public Bina()
+        {
+            //Bu türden her binada en aşağı bir kitaplık bulunur;
+            Kitaplik = new List<Kitaplik>();
+            Kitaplik.Add(new Kitaplik());
+        }
     }
 }

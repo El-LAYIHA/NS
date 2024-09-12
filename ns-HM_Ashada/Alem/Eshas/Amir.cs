@@ -1,5 +1,4 @@
 ﻿using ns_HM_Ashada.Alem.Emkine.Alanlar;
-using ns_HM_Ashada.Alem.Emkine.Rufuf;
 using ns_HM_Ashada.Alem.Eshas.Meziyet;
 using ns_HM_Ashada.Alem.Eshas;
 using ns_HM_Ashada.Alem.Asar;
@@ -12,7 +11,7 @@ namespace ns_HM_Ashada.Alem.Eshas
         public Amir()
         {             
             //Amir'in idarede olduğu mekanın netleştirillmesi
-            var Metn = "Merhaba";
+            var Metn = "x";
             var Bina = new Bina();
 
             Yayin(Metn, Bina);

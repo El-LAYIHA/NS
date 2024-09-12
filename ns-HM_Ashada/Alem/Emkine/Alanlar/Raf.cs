@@ -1,6 +1,6 @@
 ﻿using ns_HM_Ashada.Alem.Asar;
 
-namespace ns_HM_Ashada.Alem.Emkine.Rufuf
+namespace ns_HM_Ashada.Alem.Emkine.Alanlar
 {
     public class Raf
     {
@@ -9,6 +9,7 @@ namespace ns_HM_Ashada.Alem.Emkine.Rufuf
         public Raf() 
         {
             Sahifeler = new List<Sahife>();
-        }
+            Sahifeler.Add(new Sahife());
+        }    
     }
 }

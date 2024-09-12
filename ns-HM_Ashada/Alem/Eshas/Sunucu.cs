@@ -1,5 +1,4 @@
 ﻿using ns_HM_Ashada.Alem.Emkine.Alanlar;
-using ns_HM_Ashada.Alem.Emkine.Rufuf;
 using ns_HM_Ashada.Alem.Eshas.Meziyet;
 
 namespace ns_HM_Ashada.Alem.Eshas
@@ -16,7 +15,12 @@ namespace ns_HM_Ashada.Alem.Eshas
             var builder = WebApplication.CreateBuilder();
             var app = builder.Build();
 
-            app.MapGet("/", () => Bina.Rufuf.Sahifeler[0].Metn);
+            app.MapGet("/", async Metn =>
+            {
+                Metn.Response.ContentType = "text/html; charset=utf-8";
+                //await Metn.Response.WriteAsync(Bina.Kitaplik.Sahifeler[0].Metn);
+            });
+
             app.Run();
         }
     }
