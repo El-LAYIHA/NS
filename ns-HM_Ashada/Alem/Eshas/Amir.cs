@@ -11,7 +11,7 @@ namespace ns_HM_Ashada.Alem.Eshas
         public Amir()
         {             
             //Amir'in idarede olduğu mekanın netleştirillmesi
-            var Metn = "x";
+            var Metn = "Fermandır.";
             var Bina = new Bina();
 
             Yayin(Metn, Bina);

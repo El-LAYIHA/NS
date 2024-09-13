@@ -6,10 +6,9 @@ namespace ns_HM_Ashada.Alem.Emkine
     {
         public List<Sahife> Sahifeler;
 
-        public Raf()
+        public Raf() 
         {
             Sahifeler = new List<Sahife>();
-            Sahifeler.Add(new Sahife());
         }
     }
 }

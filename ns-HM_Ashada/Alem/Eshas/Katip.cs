@@ -12,16 +12,26 @@ namespace ns_HM_Ashada.Alem.Eshas
             Yazin(Metn, Bina);
         }
 
-        public void Yazin(String Metn, Bina Bina)
+        public void Yazin(String ElMetn, Bina Bina)
         {
             //Oluşturulmuş kitağlığımız hazır:
-            var IlkKitaplik = Bina.Kitaplik[0];
-            var IlkRaf = IlkKitaplik.Raf.Add(new Raf { Sahifeler = new Sahife() });
+            Bina ElBina = Bina;
 
-            var Ornek = IlkKitaplik.Raf.OrderBy(x => x).ToList().First();
+            Kitaplik Kitaplik = new Kitaplik();
+            ElBina.Kitapliklar.Add(Kitaplik);
 
-            //Kitaplığımızdaki raflara göz atıyoruz:
-            Console.WriteLine(Ornek);
+            Raf Raf = new Raf();
+            Kitaplik.Raflar.Add(Raf);
+
+            Sahife Sahife = new Sahife();
+            Raf.Sahifeler.Add(Sahife);
+
+
+            Sahife.Add(new Metn(ElMetn));
+            Sahife.SaveChanges();
+
+            var alan = Sahife.Metinler.OrderBy(b => b.MetnID).FirstOrDefault();
+            Console.WriteLine(alan);
         }
     }
 }

@@ -2,13 +2,11 @@
 {
     public class Bina
     {
-        public List<Kitaplik> Kitaplik;
-
+        public List<Kitaplik> Kitapliklar;
+        
         public Bina()
         {
-            //Bu türden her binada en aşağı bir kitaplık bulunur;
-            Kitaplik = new List<Kitaplik>();
-            Kitaplik.Add(new Kitaplik());
+            Kitapliklar = new List<Kitaplik>();
         }
     }
 }

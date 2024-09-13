@@ -6,9 +6,8 @@ namespace ns_HM_Ashada
     {
         public Ferman()
         {
-            //Ferman kime ise:
+            //Ferman kime ise bir amir çağırılır, ona iş buyurulmak üzere.
             Amir HalilBey = new Amir();
-            //Bir amir çağırılır, ona iş buyurulmak üzere.
         }
     }
 }
