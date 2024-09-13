@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ns_HM_Ashada.Alem.Emkine.Alanlar
+namespace ns_HM_Ashada.Alem.Emkine
 {
     public class Kitaplik : DbContext
     {
@@ -12,7 +12,7 @@ namespace ns_HM_Ashada.Alem.Emkine.Alanlar
             //Kitaplığın inşa edileceği yer yol ile tam adresini sağladığımız kod bloku:
             var Yer = Environment.SpecialFolder.LocalApplicationData;
             var Yol = Environment.GetFolderPath(Yer);
-            Adres = System.IO.Path.Join(Yol, "blogging.db");
+            Adres = Path.Join(Yol, "blogging.db");
         }
 
         //Adres

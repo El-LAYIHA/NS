@@ -2,7 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ns_HM_Ashada.Alem.Emkine.Alanlar;
+using ns_HM_Ashada.Alem.Emkine;
+
 
 #nullable disable
 

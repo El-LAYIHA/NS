@@ -1,4 +1,4 @@
-﻿namespace ns_HM_Ashada.Alem.Emkine.Alanlar
+﻿namespace ns_HM_Ashada.Alem.Emkine
 {
     public class Bina
     {

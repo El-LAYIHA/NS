@@ -1,4 +1,4 @@
-﻿using ns_HM_Ashada.Alem.Emkine.Alanlar;
+﻿using ns_HM_Ashada.Alem.Emkine;
 using ns_HM_Ashada.Alem.Eshas.Meziyet;
 
 namespace ns_HM_Ashada.Alem.Eshas

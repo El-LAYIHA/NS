@@ -1,15 +1,15 @@
 ﻿using ns_HM_Ashada.Alem.Asar;
 
-namespace ns_HM_Ashada.Alem.Emkine.Alanlar
+namespace ns_HM_Ashada.Alem.Emkine
 {
     public class Raf
     {
         public List<Sahife> Sahifeler;
 
-        public Raf() 
+        public Raf()
         {
             Sahifeler = new List<Sahife>();
             Sahifeler.Add(new Sahife());
-        }    
+        }
     }
 }

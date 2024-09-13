@@ -1,8 +1,8 @@
-﻿using ns_HM_Ashada.Alem.Emkine.Alanlar;
-using ns_HM_Ashada.Alem.Eshas.Meziyet;
+﻿using ns_HM_Ashada.Alem.Eshas.Meziyet;
 using ns_HM_Ashada.Alem.Eshas;
 using ns_HM_Ashada.Alem.Asar;
 using System.Security.Cryptography.X509Certificates;
+using ns_HM_Ashada.Alem.Emkine;
 
 namespace ns_HM_Ashada.Alem.Eshas
 {

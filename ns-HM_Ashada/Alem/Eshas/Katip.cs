@@ -1,6 +1,6 @@
-﻿using ns_HM_Ashada.Alem.Asar;
-using ns_HM_Ashada.Alem.Eshas.Meziyet;
-using ns_HM_Ashada.Alem.Emkine.Alanlar;
+﻿using ns_HM_Ashada.Alem.Eshas.Meziyet;
+using ns_HM_Ashada.Alem.Emkine;
+using ns_HM_Ashada.Alem.Asar;
 using System.Linq;
 
 namespace ns_HM_Ashada.Alem.Eshas
@@ -16,13 +16,12 @@ namespace ns_HM_Ashada.Alem.Eshas
         {
             //Oluşturulmuş kitağlığımız hazır:
             var IlkKitaplik = Bina.Kitaplik[0];
-            var IlkRaf = IlkKitaplik.Raf;
+            var IlkRaf = IlkKitaplik.Raf.Add(new Raf { Sahifeler = new Sahife() });
 
-            IlkRaf.Add(new Raf());
+            var Ornek = IlkKitaplik.Raf.OrderBy(x => x).ToList().First();
 
             //Kitaplığımızdaki raflara göz atıyoruz:
-            var Liste = IlkRaf.OrderBy(x => x.Sahifeler).First();
-            Console.WriteLine(Liste);
+            Console.WriteLine(Ornek);
         }
     }
 }
