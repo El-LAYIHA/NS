@@ -4,7 +4,7 @@ namespace ns_HM_Ashada.Alem.Eshas.Meziyet
 {
     public interface Yayi
     {
-        void Yazdir(string Metn, Bina Bina);
+        void Yazdir(Bina Bina, string Metn);
         void Sundur(Bina Bina);
     }
 }

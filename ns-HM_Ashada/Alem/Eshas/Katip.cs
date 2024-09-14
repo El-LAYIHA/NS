@@ -7,12 +7,12 @@ namespace ns_HM_Ashada.Alem.Eshas
 {
     public class Katip : Yazi
     {        
-        public Katip(String Metn, Bina Bina) 
+        public Katip(Bina Bina, String Metn) 
         {
-            Yazin(Metn, Bina);
+            Yazin(Bina, Metn);
         }
 
-        public void Yazin(String ElMetn, Bina Bina)
+        public void Yazin(Bina Bina, String ElMetn)
         {
             //Oluşturulmuş kitağlığımız hazır:
             Bina ElBina = Bina;

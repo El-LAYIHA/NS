@@ -4,6 +4,6 @@ namespace ns_HM_Ashada.Alem.Eshas.Meziyet
 {
     public interface Yazi
     {
-        public void Yazin(String Metn, Bina Bina);
+        public void Yazin(Bina Bina, String Metn);
     }
 }

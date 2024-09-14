@@ -4,6 +4,6 @@ namespace ns_HM_Ashada.Alem.Eshas.Meziyet
 {
     public interface İdare : Yayi
     {
-        void Yayin(string Metn, Bina Bina);
+        void Yayin(Bina Bina, string Metn);
     }
 }

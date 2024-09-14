@@ -10,7 +10,7 @@ namespace ns_HM_Ashada.Alem.Asar
         public Metn(string ElMetn) 
         {
             this.ElMetn = ElMetn;
-            this.MetnID = 4;
+            this.MetnID = 99;
         }
     }
 }
