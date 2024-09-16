@@ -6,16 +6,24 @@ namespace ns_HM_Ashada.Alem.Eshas
 {
     public class Sunucu : Sunu
     {
-        public Sunucu(Bina Bina)
+        public Oda Nerede {  get; set; }
+
+        public Sunucu(Oda Nerede)
         {
-            Sunum(Bina);
+            this.Nerede = Nerede;
         }
 
-        public void Sunum(Bina Bina)
+        public void Sunum()
         {
             var builder = WebApplication.CreateBuilder();
             var app = builder.Build();
-            var ElMetn = Bina.Kitapliklar[0].Raflar[0].Sahifeler[0].Metinler.OrderBy(Metinler => Metinler.ElMetn).FirstOrDefault();
+            var ElMetn = Nerede
+                            .Kitapliklar[0]
+                            .Raflar[0]
+                            .Sahifeler[0]
+                            .Metinler
+                                .OrderBy(Metinler => Metinler.ElMetn)
+                                .FirstOrDefault();
 
             app.MapGet("/", async Metn =>
             {

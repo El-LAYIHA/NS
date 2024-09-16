@@ -2,11 +2,6 @@
 {
     public class Bina
     {
-        public List<Kitaplik> Kitapliklar;
-        
-        public Bina()
-        {
-            Kitapliklar = new List<Kitaplik>();
-        }
+        public List<Kat>? Katlar { get; set; }
     }
 }

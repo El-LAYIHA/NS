@@ -4,13 +4,8 @@ namespace ns_HM_Ashada.Alem.Asar
 {
     public class Metn
     {
-        public int MetnID { get; set; }
-        public string ElMetn { get; set; }
-
-        public Metn(string ElMetn) 
-        {
-            this.ElMetn = ElMetn;
-            this.MetnID = 99;
-        }
+        //Her bir metnin bir kimlik numarası bir de içeriği olur:
+        public required int MetnID { get; set; }
+        public required string ElMetn { get; set; }
     }
 }

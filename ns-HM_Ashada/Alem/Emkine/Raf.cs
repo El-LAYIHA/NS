@@ -4,11 +4,6 @@ namespace ns_HM_Ashada.Alem.Emkine
 {
     public class Raf
     {
-        public List<Sahife> Sahifeler;
-
-        public Raf() 
-        {
-            Sahifeler = new List<Sahife>();
-        }
+        public List<Sahife>? Sahifeler {  get; set; }
     }
 }

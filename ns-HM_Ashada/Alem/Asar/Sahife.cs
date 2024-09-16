@@ -15,11 +15,10 @@ namespace ns_HM_Ashada.Alem.Asar
             Adres = Path.Join(Yol, "blogging.db");
         }
 
-        //Adres
+        //Adres:
         public string Adres;
 
         //İlgili adrese kitaplığın inşasını sağlayan kod bloku:
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={Adres}");
-
     }
 }
