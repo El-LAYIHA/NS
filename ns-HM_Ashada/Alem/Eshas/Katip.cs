@@ -24,10 +24,11 @@ namespace ns_HM_Ashada.Alem.Eshas
             Nerede
                  .Kitapliklar[0]
                  .Raflar[0]
-                 .Sahifeler  =   Sahifeler;
+                 .Sahifeler=
+            Sahifeler;
             
             //Sayfaların nerde olduğunun gösterilmesi:
-            Sahifeler   = 
+            Sahifeler= 
                  Nerede
                     .Kitapliklar[0]
                     .Raflar[0]
@@ -109,7 +110,7 @@ namespace ns_HM_Ashada.Alem.Eshas
             //Metin yazılcak sahifenin oluşturulması:
             Sahife Sahife = new();
             Sahifeler.Add(Sahife);
-            Sahife = Sahifeler[0]; 
+            Sahife = Sahifeler[0];
  
             //Sayfaya basılması için metinlerin gömülmesi ve kaydedilmesi:
             Sahife.Add(Metn);

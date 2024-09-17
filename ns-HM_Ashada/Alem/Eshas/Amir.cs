@@ -1,7 +1,4 @@
 ﻿using ns_HM_Ashada.Alem.Eshas.Meziyet;
-using ns_HM_Ashada.Alem.Eshas;
-using ns_HM_Ashada.Alem.Asar;
-using System.Security.Cryptography.X509Certificates;
 using ns_HM_Ashada.Alem.Emkine;
 
 namespace ns_HM_Ashada.Alem.Eshas
@@ -23,7 +20,6 @@ namespace ns_HM_Ashada.Alem.Eshas
 
             SirriBey    = new Katip     (Arsa.Binalar[0].Katlar[0].Odalar[0])   ;
             YakupBey    = new Sunucu    (Arsa.Binalar[0].Katlar[0].Odalar[0])   ;
-
 
             Idare();
         }

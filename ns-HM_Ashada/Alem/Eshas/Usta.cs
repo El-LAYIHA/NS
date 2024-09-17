@@ -1,7 +1,5 @@
-﻿using Microsoft.Identity.Client;
-using ns_HM_Ashada.Alem.Emkine;
+﻿using ns_HM_Ashada.Alem.Emkine;
 using ns_HM_Ashada.Alem.Eshas.Meziyet;
-using System.Dynamic;
 
 namespace ns_HM_Ashada.Alem.Eshas
 {
@@ -49,7 +47,6 @@ namespace ns_HM_Ashada.Alem.Eshas
             List<Raf> Raflar = new List<Raf>();
             Kitaplik.Raflar = Raflar;
             Kitaplik.Raflar.Add(Raf);
-
 
             //Arsa üzerine bir bina ona bir kat ona bir oda
             //ve ona da bir kitaplik hazır edildi artık sıra
